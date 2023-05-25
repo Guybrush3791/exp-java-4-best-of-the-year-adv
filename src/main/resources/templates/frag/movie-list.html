@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+   
+    <a 
+       th:fragment="movie(id, title)" 
+       th:href="@{/movies/{id} (id=${id})}"
+       >
+       [[ ${id} ]] - [[ ${title} ]]
+    </a>
+    
+  </body>
+</html>
